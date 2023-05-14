@@ -1,9 +1,14 @@
+# ⌨️ (0:00:00) Intro
 - youtube
   - https://youtu.be/PXMJ6FS7llk
 - source code
   - https://github.com/ifrankandrade/automation
-# ⌨️ (0:00:00) Intro
 # ⌨️ (0:00:31) Project #1 Table Extraction - Extract Tables from Websites
+- ウェブサイトからのテーブル抽出
+  - pandasライブラリが使用可能
+- `pip install pandas`
+- 参照データ
+  - https://en.wikipedia.org/wiki/List_of_The_Simpsons_episodes_(seasons_1%E2%80%9320)
 # ⌨️ (0:02:53) Table Extraction - Extract CSV Files from Websites
 # ⌨️ (0:09:38) Table Extraction - Extract Tables from PDFs
 # ⌨️ (0:13:06) Project #2 - Web Automation & Web Scraping - HTML Basics - Tags and Elements
