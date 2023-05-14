@@ -73,7 +73,75 @@
 # ⌨️ (0:28:06) Web Automation & Web Scraping - XPath - Test Your XPath
 - xpath playground
   - https://scrapinghub.github.io/xpath-playground/
+- chromeのinspectモードでxpathを用い多検索を行う方法
+  - inspectモードを開く
+  - 「要素」タブ内で`ctrl + f`を押す
+  - 検索モードが開く
 # ⌨️ (0:33:38) Web Automation & Web Scraping - XPath - Special Characters and Syntax
+- `/`
+  - 子ノードを検索する
+- `//`
+  - 全てのノードを検索する
+
+ex.)
+```html
+<article>
+    <h1>Titanic(1997)</h1>
+    <p>84 years later...</p>
+</article>
+```
+```xpath
+//article/text()
+-> None
+```
+```xpath
+//article//text()
+-> Titanic(1997)
+-> 84 years later...
+```
+- `/.`
+  - 現在のノードを検索する
+- `/..`
+  - 親ノードを検索する
+
+ex.)
+```html
+<article>
+    <h1>Titanic(1997)</h1>
+    <p>84 years later...</p>
+</article>
+```
+```xpath
+//h1/.
+-> <h1>Titanic(1997)</h1>
+```
+```xpath
+//h1/..
+-> <article> <h1>Titanic(1997)</h1> <p>84 years later...</p> </article>
+```
+- `*`
+  - ワイルドカード検索
+  - ex.) `./*`
+    - すべての子ノードの取得
+    - `/..`の逆の意味
+
+ex.)
+```html
+<article>
+    <h1>Titanic(1997)</h1>
+    <p>84 years later...</p>
+</article>
+```
+```xpath
+//article/*
+-> <h1>Titanic(1997)</h1>
+-> <p>84 years later...</p>
+```
+```xpath
+//article/*/text()
+-> Titanic(1997)
+-> 84 years later...
+```
 # ⌨️ (0:38:17) Automate The News - Installing Selenium and ChromeDriver
 # ⌨️ (0:40:34) Automate The News - Creating The Driver
 # ⌨️ (0:44:46) Automate The News - Finding Elements
