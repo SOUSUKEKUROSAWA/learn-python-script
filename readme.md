@@ -19,6 +19,34 @@
 - `pip install opencv-python-headless`
 - `pip install camelot-py`
 # ⌨️ (0:13:06) Project #2 - Web Automation & Web Scraping - HTML Basics - Tags and Elements
+- articleタグ
+  - html5で新しく追加された
+  - ウェブページのアクセシビリティを向上させることができ、検索エンジンにとっても有益
+    - 検索エンジンは、articleタグを使用して、ページ内の主要なコンテンツを特定し、より正確な検索結果を提供することができます。
+    - スクリーンリーダーやその他の支援技術も、articleタグを使用してコンテンツを適切にナビゲートできる
+- navタグ
+  - ページ内のナビゲーション領域
+    - ペジネーションの部分など
+- table
+  - tr
+    - table row
+  - td
+    - table data
+
+```html
+<table>
+    <tr>
+        <td>a</td>
+        <td>b</td>
+    </tr>
+    <tr>
+        <td>c</td>
+        <td>d</td>
+    </tr>
+</table>
+```
+- iframe
+  - 他のページの埋め込みを行える
 # ⌨️ (0:20:57) Web Automation & Web Scraping - HTML Basics - Tree Structure
 # ⌨️ (0:24:22) Web Automation & Web Scraping - XPath - Syntax, Functions and Operators
 # ⌨️ (0:28:06) Web Automation & Web Scraping - XPath - Test Your XPath
