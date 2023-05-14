@@ -147,7 +147,6 @@ ex.)
   - https://chromedriver.chromium.org/downloads
   - zipを展開した際の展開先のパスを後で使用する
 - `pip install selenium`
-# ⌨️ (0:40:34) Automate The News - Creating The Driver
 # ⌨️ (0:44:46) Automate The News - Finding Elements
 # ⌨️ (1:04:34) Automate The News - Exporting Data to a CSV File
 # ⌨️ (1:12:34) Automate The News - Headless mode
