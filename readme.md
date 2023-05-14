@@ -148,6 +148,7 @@ ex.)
   - zipを展開した際の展開先のパスを後で使用する
 - `pip install selenium`
 # ⌨️ (0:44:46) Automate The News - Finding Elements
+- chromeのinspectモードで所望のxpathがどのようになるかをチェックしたうえでスクリプトを書いていく
 # ⌨️ (1:04:34) Automate The News - Exporting Data to a CSV File
 # ⌨️ (1:12:34) Automate The News - Headless mode
 # ⌨️ (1:18:18) Automate The News - Preparing Script to Be Run Everyday
