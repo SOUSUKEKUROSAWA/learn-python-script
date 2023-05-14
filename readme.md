@@ -66,7 +66,13 @@
     - 属性名の前方一致検索で，要素を選択
   - `//tagName[(expression 1) and (expression 2)]`
     - 条件１と２の両方に当てはまる要素を選択
+  - `//tagName/tagName`
+    - 子要素の選択
+  - `//tagName/text()`
+    - 要素内のテキストの選択
 # ⌨️ (0:28:06) Web Automation & Web Scraping - XPath - Test Your XPath
+- xpath playground
+  - https://scrapinghub.github.io/xpath-playground/
 # ⌨️ (0:33:38) Web Automation & Web Scraping - XPath - Special Characters and Syntax
 # ⌨️ (0:38:17) Automate The News - Installing Selenium and ChromeDriver
 # ⌨️ (0:40:34) Automate The News - Creating The Driver
