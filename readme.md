@@ -12,6 +12,12 @@
 - 参照データ
   - https://en.wikipedia.org/wiki/List_of_The_Simpsons_episodes_(seasons_1%E2%80%9320)
 # ⌨️ (0:09:38) Table Extraction - Extract Tables from PDFs
+- `pip install tk`
+- `pip install ghostscript`
+- goastscript本体のインストール
+  - https://ghostscript.com/releases/gsdnld.html
+- `pip install opencv-python-headless`
+- `pip install camelot-py`
 # ⌨️ (0:13:06) Project #2 - Web Automation & Web Scraping - HTML Basics - Tags and Elements
 # ⌨️ (0:20:57) Web Automation & Web Scraping - HTML Basics - Tree Structure
 # ⌨️ (0:24:22) Web Automation & Web Scraping - XPath - Syntax, Functions and Operators
