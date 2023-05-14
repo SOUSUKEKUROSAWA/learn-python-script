@@ -47,8 +47,25 @@
 ```
 - iframe
   - 他のページの埋め込みを行える
-# ⌨️ (0:20:57) Web Automation & Web Scraping - HTML Basics - Tree Structure
 # ⌨️ (0:24:22) Web Automation & Web Scraping - XPath - Syntax, Functions and Operators
+- xpath
+  - xml path language
+  - XMLドキュメントからノードを取得するためのクエリ言語
+    - HTMLページの要素の取得にも利用できる
+  - CSSと似てる
+- syntax
+  - `//tagName`
+    - 要素の選択
+  - `//tagName[1]`
+    - 一致する要素の内，最初に一致した要素を選択
+  - `//tagName[@AttributeName="Value"]`
+    - 属性名を指定して，要素を選択
+  - `//tagName[contains(@AttributeName, "Value")]`
+    - 属性名の部分一致検索で，要素を選択
+  - `//tagName[srarts-with(@AttributeName, "Value")]`
+    - 属性名の前方一致検索で，要素を選択
+  - `//tagName[(expression 1) and (expression 2)]`
+    - 条件１と２の両方に当てはまる要素を選択
 # ⌨️ (0:28:06) Web Automation & Web Scraping - XPath - Test Your XPath
 # ⌨️ (0:33:38) Web Automation & Web Scraping - XPath - Special Characters and Syntax
 # ⌨️ (0:38:17) Automate The News - Installing Selenium and ChromeDriver
