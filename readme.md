@@ -149,8 +149,14 @@ ex.)
 - `pip install selenium`
 # ⌨️ (0:44:46) Automate The News - Finding Elements
 - chromeのinspectモードで所望のxpathがどのようになるかをチェックしたうえでスクリプトを書いていく
-# ⌨️ (1:04:34) Automate The News - Exporting Data to a CSV File
 # ⌨️ (1:12:34) Automate The News - Headless mode
+- これまではseleniumがブラウザを自動で開いていたが，ブラウザを開くことなくスクリプトを実行する方法もある
+  - ヘッドレスモード
+- Options()
+  - seleniumの設定を変更できる
+  - デフォルトでfalseになってるheadlessモードをtrueにする
+- pythonスクリプトの実行
+  - pythonファイルを開いた状態で右上の実行ボタンを押す
 # ⌨️ (1:18:18) Automate The News - Preparing Script to Be Run Everyday
 # ⌨️ (1:30:17) Automate The News - Convert py to exe
 # ⌨️ (1:37:18) Automate The News - Schedule Python Script with crontab (macOS)

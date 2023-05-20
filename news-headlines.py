@@ -1,24 +1,30 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import pandas as pd
 
 url = "https://www.thesun.co.uk/sport/football/"
 path = "\Program Files\chromedriver_win32"
 
+# headless-mode
+options = Options()
+options.headless = True
+
 service = Service(executable_path=path)
 
 class WebDriverContext:
-    def __init__(self, service):
+    def __init__(self, service, options):
         self.service = service
+        self.options = options
 
     def __enter__(self):
-        self.driver = webdriver.Chrome(service=self.service)
+        self.driver = webdriver.Chrome(service=self.service, options=options)
         return self.driver
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.driver.quit()
 
-with WebDriverContext(service) as driver:
+with WebDriverContext(service, options) as driver:
     driver.get(url)
 
     soccer_news_containers = driver.find_elements(by="xpath", value='//div[@class="teaser__copy-container"]')
@@ -44,4 +50,4 @@ with WebDriverContext(service) as driver:
 
     df_headlines = pd.DataFrame(soccer_news)
 
-    df_headlines.to_csv('headline.csv')
+    df_headlines.to_csv('headline-headless.csv')
