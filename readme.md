@@ -158,6 +158,21 @@ ex.)
 - pythonスクリプトの実行
   - pythonファイルを開いた状態で右上の実行ボタンを押す
 # ⌨️ (1:18:18) Automate The News - Preparing Script to Be Run Everyday
+- スクリプトを定期的に自動で実行させる
+- import os
+  - osとのインタラクションを可能にする
+    - フォルダの作成など
+- ファイルパスに`/`を直接指定しない方がいい
+  - 理由
+    - OSによってディレクトリ間の区切り文字が異なるから
+      - MacOSは`/`だが，WindowsOSは`\`
+  - 対処法
+    - `os.path.join()`を使用する
+      - OSと対話的にパスを作成してくれる
+- 出力ファイルを常にスクリプトが存在するパスと同じ場所に配置されるようにするための処置
+  - `os.path.dirname(sys.executable)`
+    - スクリプト自体が存在するディレクトリのパスを取得する
+      - これを出力ファイルのパスに含めることで，スクリプトがどこから実行されても，出力ファイルが同じ場所に保存されるようになる
 # ⌨️ (1:30:17) Automate The News - Convert py to exe
 # ⌨️ (1:37:18) Automate The News - Schedule Python Script with crontab (macOS)
 # ⌨️ (1:42:16) Project #3 - Automate Excel Report - Create a Pivot Table with Python
