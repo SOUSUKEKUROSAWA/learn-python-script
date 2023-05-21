@@ -230,5 +230,4 @@ ex.)
       - 2 -> B
 - エクセルを開いて編集しているとき，一時保存用のファイルが作成されている
   - `$~ <file name>.xlsx`
-# ⌨️ (2:25:32) Automate Excel Report - Generate Excel Reports with One Click (py to exe)
 # ⌨️ (2:33:22) Project #4 - Automate WhatsApp
