@@ -222,6 +222,14 @@ ex.)
 - `pip install openpyxl`
   - スクリプトでエクセルの操作を実行するためのライブラリ
 # ⌨️ (2:05:02) Automate Excel Report - Write Excel Formulas with Python
+- エクセル関数をスクリプトで作成する
+- `get_column_letter()`
+  - 数字で取得アクセスする列データを英語に変換する
+    - ex.)
+      - 1 -> A
+      - 2 -> B
+- エクセルを開いて編集しているとき，一時保存用のファイルが作成されている
+  - `$~ <file name>.xlsx`
 # ⌨️ (2:19:18) Automate Excel Report - Format Cells
 # ⌨️ (2:23:04) Automate Excel Report - Convert Pivot Table to Excel Report
 # ⌨️ (2:25:32) Automate Excel Report - Generate Excel Reports with One Click (py to exe)
