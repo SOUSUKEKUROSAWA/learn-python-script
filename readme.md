@@ -209,11 +209,18 @@ ex.)
   - タスクの名前，トリガの設定
   - アクションの作成
     - 実行ファイルのパスを指定
+  - 条件を修正
+    - すべてのチェックを外す
+      - 条件なしで実行されるようにする
+  - 設定
+    - 失敗した場合もすぐに再実行する設定
   - OK
 # ⌨️ (1:42:16) Project #3 - Automate Excel Report - Create a Pivot Table with Python
 - 従業員が各生産ラインで費やしている時間をピポットテーブルにまとめるスクリプト
   - ![](https://storage.googleapis.com/zenn-user-upload/5c230e5ebde3-20230521.png)
 # ⌨️ (1:49:42) Automate Excel Report - Add a Bar Chart
+- `pip install openpyxl`
+  - スクリプトでエクセルの操作を実行するためのライブラリ
 # ⌨️ (2:05:02) Automate Excel Report - Write Excel Formulas with Python
 # ⌨️ (2:19:18) Automate Excel Report - Format Cells
 # ⌨️ (2:23:04) Automate Excel Report - Convert Pivot Table to Excel Report
