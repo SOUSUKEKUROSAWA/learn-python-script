@@ -197,6 +197,19 @@ ex.)
       - package.json的なやつ
       - Gitで追跡すべき
 # ⌨️ (1:37:18) Automate The News - Schedule Python Script with crontab (macOS)
+- `crontab -e`
+  - スケジュール実行を定義するファイルを開くためのコマンド
+  - 実行間隔，実行ファイルへのパスを設定する
+- `crontab -l`
+  - 設定されたコマンドの一覧を表示
+    - 正しく設定できているか確認できる
+- WindowsOSでの設定
+  - タスクスケジューラを起動
+  - タスクの作成
+  - タスクの名前，トリガの設定
+  - アクションの作成
+    - 実行ファイルのパスを指定
+  - OK
 # ⌨️ (1:42:16) Project #3 - Automate Excel Report - Create a Pivot Table with Python
 # ⌨️ (1:49:42) Automate Excel Report - Add a Bar Chart
 # ⌨️ (2:05:02) Automate Excel Report - Write Excel Formulas with Python
