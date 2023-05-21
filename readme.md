@@ -174,6 +174,28 @@ ex.)
     - スクリプト自体が存在するディレクトリのパスを取得する
       - これを出力ファイルのパスに含めることで，スクリプトがどこから実行されても，出力ファイルが同じ場所に保存されるようになる
 # ⌨️ (1:30:17) Automate The News - Convert py to exe
+- `pip install pyinstaller`
+  - pyファイルを自動で実行可能な状態にするため
+- `pyinstaller --onefile <file name>`
+  - 実際に．pyファイルを実行可能なファイルに変換する
+    - buildディレクトリとdistディレクトリが作成される
+    - distディレクトリの中に`<file name>.exe`が作成されている
+- 実行可能になったら，ファイルをクリックするだけでスクリプトが実行されるようになる
+  - Pythonがインストールされていないマシンでも実行できる
+- 自動作成されるファイルたちについて
+  - buildディレクトリ
+    - 必要なPythonモジュールとリソースの置き場
+    - スクリプトの依存関係の解析
+      - node_modulesディレクトリ的なやつ
+  - distディレクトリ
+    - ビルドプロセスの採取的な出力が保存される
+      - 実行可能なバイナリ（.exe），スクリプト（.app）
+  - `<python script file name>.spec`
+    - ビルドプロセスの詳細を定義
+    - 初回のPyInstaller実行時に自動的に生成され、その後の実行時には既存の.specファイルが使用される
+    - ビルド設定を再現するために使用される
+      - package.json的なやつ
+      - Gitで追跡すべき
 # ⌨️ (1:37:18) Automate The News - Schedule Python Script with crontab (macOS)
 # ⌨️ (1:42:16) Project #3 - Automate Excel Report - Create a Pivot Table with Python
 # ⌨️ (1:49:42) Automate Excel Report - Add a Bar Chart
